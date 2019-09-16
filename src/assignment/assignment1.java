@@ -55,7 +55,7 @@ public class assignment1 {
 	}
 	
 	/*
-	 * Q4, find the fisrt non-repeating character; 
+	 * sort
 	 * Designed by Kai Tian;
 	 */
 	static void sort(int[] arr) {
@@ -121,7 +121,7 @@ public class assignment1 {
 	}
 	
 	public static void main(String[] args) {
-/* for test
+/* ----------------for test
 		int[] arr = {0, 2, 1, 5, 9, 4};
 		int index = findKthLargest(arr,2);
 
