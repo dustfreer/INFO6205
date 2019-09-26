@@ -34,7 +34,7 @@ public class assignment1 {
 	}
 	
 	/*
-	 * Q3, find index of two numbers such that they add up to a specific targe
+	 * Q3, find index of two numbers such that they add up to a specific targe;
 	 * Designed by Kai Tian;
 	 */
 	public static int[] twoSum(int[] nums, int target) {
@@ -102,7 +102,7 @@ public class assignment1 {
 	}
 	
 	/*
-	 * Q5, find maximum Profit
+	 * Q5, find maximum Profit;
 	 * Designed by Kai Tian;
 	 */
 	public static int maxProfit(int[] prices) { 
@@ -135,8 +135,12 @@ public class assignment1 {
 		System.out.println(aa);
 		System.out.println(maxProfit(arr));
 */
-		
 
 	}
 
 }
+
+
+
+
+
