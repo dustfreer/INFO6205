@@ -47,7 +47,7 @@ public class assignment2 {
 			throw new Exception("Not Implemented");
 		
 		Integer[] result = new Integer[2];
-		Map<Integer, Integer> num = new HashMap();
+		Map<Integer, Integer> num = new HashMap<Integer, Integer>();
 		for (int i = 0; i < nums.length; i++)
 			num.put(nums[i], i);
 				
@@ -70,7 +70,7 @@ public class assignment2 {
 		if( nums1.length <= 0 || nums2.length <= 0)
 			throw new Exception("Not Implemented");
 		
-		Map<Integer, Integer> num = new HashMap();
+		Map<Integer, Integer> num = new HashMap<Integer, Integer>();
 		ArrayList<Integer> array= new ArrayList<Integer>(); // implement arraylist to record unknown size array;
 		
 		for (int i = 0; i < nums1.length; i++) {
@@ -164,7 +164,7 @@ public class assignment2 {
 	 * Designed by Kai Tian;
 	 */      
     
-    public static Integer[] kClosestToX(Integer[] arr, Integer k, Integer x) throws Exception {
+    public static Integer[] kClosestToX(Integer[] arr, Integer k, Integer x) throws Exception  {
     	if( arr.length <= 0 || k > arr.length)    	        
     		throw new Exception("Not Implemented");
     	
@@ -284,6 +284,8 @@ public class assignment2 {
     	}
     	return false;
     }
+    
+    
 	public static void main(String[] args) {
 	    Integer[] nums1 = new Integer[]{5, 6, 8, 10, 24};
 	    Integer[] nums2 = new Integer[]{12, 15, 20, 25, 30};
