@@ -164,7 +164,11 @@ public class assignment3 {
 		Node addHead = head;
 		addHead = addHead.next;
 		while (tempHead != null) {
-			addHead.random = tempHead.random;
+			if ( tempHead.random != null) {
+			addHead.random = tempHead.random.next;
+			}else {
+				addHead.random = null;
+			}
 			if ( addHead.next == null)
 				break;
 			addHead = addHead.next.next;
@@ -409,7 +413,7 @@ public class assignment3 {
 			temp = helpAddTwoNumbers( l1.next, l2, diff-1);
 			val = l1.val;
 		}else {
-			temp = helpAddTwoNumbers( l1, l2.next, diff-1);
+			temp = helpAddTwoNumbers( l1, l2.next, diff+1);
 			val = l2.val;
 		}
 		if ( temp != null) {
