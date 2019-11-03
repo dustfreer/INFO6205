@@ -250,10 +250,7 @@ public class Assignment5 {
 	public static void calculatePathSum(TreeNode root, int sum, int i, List<List<Integer>> result, List<Integer> temp) {
 		if ( root == null) return;
 		
-		while ( temp.size() > i) {
-			temp.remove(i);
-		}
-		temp.add(i++, root.val);
+		temp.add(i, root.val);
 		if ( root.left == null && root.right == null) {
 			int sum1 = 0;
 			for ( int n : temp)
@@ -261,8 +258,8 @@ public class Assignment5 {
 			if ( sum1 == sum )
 				result.add(new ArrayList<Integer>(temp));
 		}else {
-			calculatePathSum(root.left, sum, i, result, temp);
-			calculatePathSum(root.right, sum, i, result, temp);
+			calculatePathSum(root.left, sum, i+1, result, temp);
+			calculatePathSum(root.right, sum, i+1, result, temp);
 		}				
 	}
 	

@@ -72,7 +72,7 @@ public class assignment4 {
 	/*
 	 * Q3, Implement the following operations of a queue using stacks ;
 	 * Designed by Kai Tian;
-	 */
+	 
 
 	Stack<Integer> sk1 = new Stack<Integer>();
 	Stack<Integer> sk2 = new Stack<Integer>();
@@ -82,12 +82,10 @@ public class assignment4 {
 	}
 	
 
-	/** Push element x to the back of queue. */
 	public void push(int x) {
 		sk1.push(x);
 	}
 
-	/** Removes the element from in front of queue and returns that element. */
 	public int pop() {
 		if ( sk2.isEmpty()) {
 			while ( !sk1.isEmpty() )
@@ -96,7 +94,6 @@ public class assignment4 {
 		return sk2.pop();
 	}
 
-	/** Get the front element. */
 	public int peek() {
 		if ( sk2.isEmpty()) {
 			while ( !sk1.isEmpty() )
@@ -106,10 +103,10 @@ public class assignment4 {
 		return sk2.peek();
 	}
 
-	/** Returns whether the queue is empty. */
 	public boolean empty() {
 		return (sk1.isEmpty() && sk2.isEmpty());
 	}
+	*/
 	
 	/*
 	 * Q4, Given two strings S and T, 
@@ -146,7 +143,7 @@ public class assignment4 {
 	 * Q5, Design a stack that supports push, pop, top, 
 	 * and retrieving the minimum element in constant time.
 	 * Designed by Kai Tian;
-	 */
+	 
 	Stack<Integer> sk1 = new Stack<Integer>();
 	Stack<Integer> sk2 = new Stack<Integer>();
 	public MinStack() {
@@ -173,7 +170,7 @@ public class assignment4 {
 	public int getMin() {
 		return sk2.peek();
 	}
-	
+	*/
 	/*
 	 * Q6, Evaluate the value of an arithmetic expression in Reverse Polish Notation
 	 * Designed by Kai Tian;
@@ -331,6 +328,7 @@ public class assignment4 {
 			}
 			
 		}
+		return n2;
 			
 	}
 	
@@ -338,7 +336,7 @@ public class assignment4 {
 	/*
 	 * Q10, Given a nested list of integers, implement an iterator to flatten it.
 	 * Designed by Kai Tian;
-	 */
+	 
 	private List<NestedInteger> nestedList = new ArrayList<NestedInteger>();
     List<Integer> result = new ArrayList<Integer>();
     int count;
@@ -373,7 +371,7 @@ public class assignment4 {
         }
         return result;
     }
-	
+	*/
 	/*
 	 * Q11, Implement a queue by using two stacks and Optimize poll function(Dequeue() in C#).
 	 * Designed by Kai Tian;
@@ -456,7 +454,7 @@ public class assignment4 {
 		sk.push('8');
 		sk.push('-');
 		sk.push('8');
-		System.out.println(help(0,sk));
+		//System.out.println(help(0,sk));
 	}
 	
 
